@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEM,AACE,YADI,GACF,IAAI,CAAC;EACf,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAMH;;AALT,AAAA,IAAI;AALE,YAAM,GACF,IAAI,AAMb,IAAK,CAAA,WAAW,EAAE;EACf,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "../app/sascc/header.scss"
+    ],
+    "names": [],
+    "file": "header.css"
+}

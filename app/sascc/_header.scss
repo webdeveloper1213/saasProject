@@ -6,6 +6,7 @@ display: block;
 width: 26px;
 height: 26px;
 background-color: $darkBlue;
+padding: 1px;
 
 &:not(:last-child) {
     margin-bottom: 3px;

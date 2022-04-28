@@ -18,9 +18,25 @@ width: 26px;
 height: 5px;
 background-color: $darkBlue;
 padding: 1px;
+transition: all 300ms ease-in-out;
+transform-origin: 1px 3px;
 &:not(:last-child) {
     margin-bottom: 3px;
 }
+        }
+
+        &.open {
+            >span:first-child {
+ transform: rotate(45deg);
+            }
+            >span:nth-child(2) {
+ opacity: 0;
+            }
+            >span:last-child {
+ transform: rotate(-45deg);
+
+
+            }
         }
     }
     &__links {
@@ -52,7 +68,7 @@ padding: 1px;
         }
         }
 
-       
+  
 
     }
     &__cta {
@@ -63,4 +79,16 @@ padding: 1px;
             opacity: 0.75;
         }
     }
+     //overlay
+     .overlay {
+     opacity: 0;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($darkBlue, transparent);
+      }
+
 }
+   

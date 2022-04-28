@@ -89,10 +89,28 @@ button,
   height: 5px;
   background-color: #2d314d;
   padding: 1px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 1px 3px;
+          transform-origin: 1px 3px;
 }
 
 .header__menu > span:not(:last-child) {
   margin-bottom: 3px;
+}
+
+.header__menu.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header__menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__menu.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header__links a {
@@ -139,5 +157,16 @@ button,
 
 .header__cta:hover {
   opacity: 0.75;
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
 }
 /*# sourceMappingURL=style.css.map */
